@@ -5,7 +5,7 @@ This is your site JavaScript code - you can add interactivity and carry out proc
 
 // Print a message in the browser's dev tools console each time the page loads
 // Use your menus or right-click / control-click and choose "Inspect" > "Console"
-console.log("Hello 🌎");
+console.log("Hello :earth_americas:");
 
 /* 
 Make the "Click me!" button move when the visitor clicks it:
@@ -15,12 +15,14 @@ const btn = document.querySelector("button"); // Get the button from the page
 // Detect clicks on the button
 
 function bomb(){
-  console.log("cringe")
+  bomb();
+  bomb();
 }
+
+bomb();
 
 if (btn) {
   btn.onclick = function() {
-    bomb();
     // The JS works in conjunction with the 'dipped' code in style.css
     btn.classList.toggle("dipped");
   };
