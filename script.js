@@ -13,8 +13,14 @@ Make the "Click me!" button move when the visitor clicks it:
 */
 const btn = document.querySelector("button"); // Get the button from the page
 // Detect clicks on the button
+
+function bomb(){
+  console.log("cringe")
+}
+
 if (btn) {
   btn.onclick = function() {
+    bomb();
     // The JS works in conjunction with the 'dipped' code in style.css
     btn.classList.toggle("dipped");
   };
